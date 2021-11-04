@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./test.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1>Тест на визначення мовного рівня</h1>
+        </div>
+        <div>
+            <img src="./img/owl.png" class="owl" alt="owl">
+        </div>
+        <div class="listLanguagesTests">
+            <div class="languageTest">
+                <a href="#">
+                    <img class="imgAnimationLanguage" src="./img/english.png" alt="English">
+                    <span>English</span>
+                </a>
+            </div>
+            <div class="languageTest">
+                <a href="#">
+                    <img class="imgAnimationLanguage" src="./img/german.png" alt="German">
+                    <span class="">German</span>
+                </a>
+            </div>
+            <div class="languageTest">
+                <a href="#">
+                    <img class="imgAnimationLanguage" src="./img/spanish.png" alt="Español">
+                    <span>Español</span>
+                </a>
+            </div>
+            <div class="languageTest">
+                <a href="#">
+                    <img class="imgAnimationLanguage" src="./img/polish.png" alt="Polskie">
+                    <span>Polskie</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $("img").hover(function(){
+        if($(this).attr('class')=='imgAnimationLanguage')
+        {
+            $( this ).attr('class', 'imgAnimationLanguageStart');
+            setTimeout(()=>$( this ).attr('class', 'imgAnimationLanguage'), 1410);
+        }
+  });
+    </script>
+</body>
+</html>
